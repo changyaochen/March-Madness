@@ -9,3 +9,5 @@
 Even my prediction doesn't work out quite well, let me elaborate my procedures anyway.
 <a name='data'></a>
 ### The data
+
+The data are provided by [Kaggle](https://www.kaggle.com/c/march-machine-learning-mania-2017/data), which are already nicely parsed. The game statistics are quite straigtforward if one knows the basics of the basketball game, and I am mostly interested in those dataset with detailed statistic for each game. a
