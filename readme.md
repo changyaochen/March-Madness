@@ -17,7 +17,7 @@ The data are provided by [Kaggle](https://www.kaggle.com/c/march-machine-learnin
 <a name='model'></a>
 ### The models
 
-Preparation for the training data set is actually the time-consuming part, while the regression is more like a one-button opeartion. For this project, I've tried (1) random forrest, (2) neural network, (3) logistic regression, and (4) Gradient Boost, all from `sklearn` package. Since the Kaggle competition requires a winning probability, the direct neural network here seems not quite appropriate. I've also hold out 20% of the training data for cross validation purpose. Below is a snapshot for the training result. I have played with the hyperparameters a little bit, trying to get better results.
+Preparation for the training data set is actually the time-consuming part, while the regression is more like a one-button opeartion. For this project, I've tried (1) random forest, (2) neural network, (3) logistic regression, and (4) Gradient Boost, all from `sklearn` package. Since the Kaggle competition requires a winning probability, the direct neural network here seems not quite appropriate. I've also hold out 20% of the training data for cross validation purpose. Below is a snapshot for the training result. I have played with the hyperparameters a little bit, trying to get better results.
 ~~~
 ===== run #1 of 1 ======
 
@@ -55,6 +55,9 @@ x-validation Accurancy: 0.7675988428158148
 Time spent for GBRT: 32.882s
 The logloss is: 1.624365021920362
 ~~~
+From the random forest output, it seems that the Massey Ordinal rankings are the most important predictors.
 
 <a name='miss'></a>
 ### What have I missed
+
+Since I've done poorly, both in terms for predicting the outcome, or the ranking in the competition, I am asking myself where it went wrong. From the discussion posted on Kaggle, it seems Massey Ordinal rankings are really the key, and I should probably just use them as features. Also, some people also use [Elo rating](https://en.wikipedia.org/wiki/Elo_rating_system) with good results, and some people are taking distance between the game location and school location into consideration. Well, I guess I've learnt quite a lot... It have been really fun! 
